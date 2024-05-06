@@ -1,0 +1,7 @@
+{
+  "name": "tarea-directivas-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

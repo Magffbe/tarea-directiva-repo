@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-button (click)="incrementarContador()">Incrementar contador</ion-button>
+<ion-item *ngIf="contador >= 18">
+<ion-label>Felicidades, ya eres mayor de edad</ion-label>
+<ion-item *ngFor="let animal of names">{{animal}}</ion-item>
+<ion-input [(ngModel)]="phoneNumber" type="tel"></ion-input>
+<div [ngClass]="{'aprobado': variable >= 65, 'reprobado': variable < 65}">
+</div>
+<ion-label [ngStyle]="{'color': textColor}">Texto con color dinámico</ion-label>
+<ion-button [ngSwitch]="colorButton">
+  <ion-button *ngSwitchCase="'primary'">Primary</ion-button>
+  <ion-button *ngSwitchCase="'dark'">Dark</ion-button>
+  <ion-button *ngSwitchCase="'danger'">Danger</ion-button>
+</ion-button>
+
+</ion-item>
+  </div>
+</ion-content>
